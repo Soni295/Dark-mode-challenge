@@ -2,12 +2,21 @@ import React, {useState} from 'react';
 import { BtnMode }from './BtnMode';
 import { Title }from './Title';
 import { Description }from './Description';
-
 import "./App.css";
 
-const desc1 = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt quisquam facilis perspiciatis aut ipsum dolorem laborum aspernatur ipsa, explicabo quas blanditiis nihil incidunt id impedit officiis voluptatibus debitis illum tenetur!'
-const desc2 = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt quisquam facilis perspiciatis aut ipsum dolorem laborum aspernatur ipsa, explicabo quas blanditiis nihil incidunt id impedit officiis voluptatibus debitis illum tenetur!'
-
+const desc1 = `
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet ut est
+a tincidunt. Vestibulum vitae torem ac eros aluquam euismod sed sit amet neque.
+Atiquam quis pellentesque ex. Integer nec consectetur dui, quis sagittis felis.
+Vestibulum lobortis, massa et egestas posuere, dui quam ullamcorper velit, ut
+gravida velit tortor id sem
+`
+const desc2 = `Pellentesque sollicitudin cursus magna, nec pharetra metus alquam nec.
+Phasellus ac enim viverra, interdum metus eu, interdum metus. Suspendisse
+pretium lacus id justo consequat, non iaculis sem egestas. Ut condimentum
+dignissim risus ac accumsan. Integer rhoncus mauris eget dolor condimentum
+consequat id eu sapien. Quisque a rhoncus est, a mattis diam. Integer facilisis
+nisi ac mattis lobortis. Donec sit amet mollis nibh`
 
 const Input = ({placeholder, type}) => {
   return(
@@ -47,8 +56,8 @@ const App = () =>{
           <Input placeholder='Email' />
         </div>
         <div className='btns'>
-          <Btn value='Exit' color='success'/>
-          <Btn value='Save' color='delete'/>
+          <Btn value='Exit' color='delete'/>
+          <Btn value='Save' color='success'/>
         </div>
       </div>
     </main>

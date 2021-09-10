@@ -6,7 +6,7 @@ export const BtnMode = ({darkMode, changeMode}) => {
   return(
     <img
       className='btn-dark-mode'
-      src={darkMode ? moon : sun}
+      src={darkMode ? sun : moon}
       onClick={changeMode}
     >
     </img>

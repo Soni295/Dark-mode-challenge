@@ -5,6 +5,7 @@
   --light-mode-success: #bbfad7;
   --dark-mode-bg: #303030;
   --dark-mode-font: #ffffff;
+  --light-gray-font: #767676;
 }
 body {
   height: 100vh;
@@ -29,7 +30,7 @@ main {
   transform: translate(-50%, -50%);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 1fr 1fr 1fr;
 
 }
 .btn-dark-mode {
@@ -74,4 +75,7 @@ main {
 }
 .delete {
   background-color: var(--light-mode-delete);
+}
+input::placeholder{
+  color: var(--light-gray-font);
 }
